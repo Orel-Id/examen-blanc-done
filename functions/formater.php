@@ -4,11 +4,16 @@
  * @param string $prenom nom du stagiaires
  * @param string $sexe nom du stagiaires
  */
-function formatCompleteNom(string $nom, string $prenom, string $sexe): string {
-    $result = 'Mme';
-    if ($sexe === 'M') {
-        $result = 'Mr';
+function formatCompleteNom(string $nom, string $prenom, string $sexe = null): string {
+    $result = '';
+    if ($sexe !== null) {
+        if ($sexe === 'M') {
+            $result = 'Mr';
+        } else {
+            $result = 'Mme';
+        }
     }
+    
     $nomFormate = strtoupper($nom);
     $prenomFormate = strtoupper(substr($prenom,0,1)).strtolower(substr($prenom,1));
     return "$result $nomFormate $prenomFormate";
