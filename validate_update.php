@@ -12,7 +12,6 @@ $ddn = [
     isset($_POST["mois"])?$_POST["mois"] : null,
     isset($_POST["annee"])?$_POST["annee"] : null,
 ];
-var_dump($ddn);
 $hobbiesDuStagiaire = isset($_POST["hobbies"])?$_POST["hobbies"] : [];
 
 $error = false;
