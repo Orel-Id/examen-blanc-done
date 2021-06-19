@@ -15,7 +15,7 @@
     <h1>Information de <?= $nomAffichage ?></h1>
     <ul>
         <?php foreach($hobbiesDuStagiaire as $hobbie): ?>
-            <li><small><?= $hobbie ?></small> <?= $hobbies[$hobbie] ?> </li>
+            <li><?= $hobbies[$hobbie] ?> </li>
         <?php endforeach; ?>
     </ul>
 </body>
